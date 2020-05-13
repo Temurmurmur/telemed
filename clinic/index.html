@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/uikit/uikit.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/uikit/uikit.min.js"></script>
+  <script src="/uikit/uikit-icons.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+      <div class="header indent">
+        <a href="#" class="header__logo">
+          <img src="img/header/logo.svg" alt="">
+        </a>
+        <div class="header__nav">
+          <div class="header__item header__item_disable"><img src="img/header/location.svg" alt="">Москва</div>
+          <a href="#" class="header__item"><img src="img/header/message.svg" alt="">Написать в чат</a>
+          <a href="#" class="header__item" uk-toggle="target: #modal-close-default"><img src="img/header/callback.svg" alt="">Обратный звонок</a>
+        </div>
+        <div class="header__call">
+          <img src="img/header/phone.svg" alt="">
+          <div class="header__phone-info">
+            <a href="tel:+79611119682">+7(961)111-96-82</a>
+            <span>с 9:00 до 19:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-mob">
+      <div class="header-mob__btn"></div>
+      <a href="#" class="header-mob__logo">
+        <img src="/img/mob/logo.svg" alt="">
+      </a>
+      <a href="#" class="header-mob__phone">
+        <img src="/img/mob/phone.svg" alt="">
+      </a>
+    </div>
+    <div class="header-drop">
+      <div class="header-drop__main">
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+          <li class="uk-parent">
+            <a href="#" class="header-drop__list">Написать в чат</a>
+            <ul class="uk-nav-sub">
+              <li class="nav__item">
+                <form class="modal__form" action="">
+                  <div class="card__form-row mob-chat">
+                    <input class="card__form-input mob-input" type="text" name="name" value="" placeholder="Ваше имя*" required>
+                    <input class="card__form-input mob-input" type="text" name="phone" value="" placeholder="Ваш телефон*" required>
+                    <input class="card__form-input mob-input" type="text" name="mail" value="" placeholder="Email" required>
+                  </div>
+                  <textarea class="card__form-textarea textarea mob-input mob-mrg" name="comment" placeholder="Комментарий"></textarea>
+                  <a href="#" class="card__btn docs__btn btn mob-btn" data-type="diagonal_swipe_left">Получить консультацию</a>
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li class="uk-parent">
+            <a href="#" class="header-drop__list">Заказать обратный звонок</a>
+            <ul class="uk-nav-sub">
+              <li class="nav__item">
+                <form class="modal__form" action="">
+                  <div class="card__form-row mob-row">
+                    <input class="card__form-input mob-input" type="text" name="name" value="" placeholder="Ваше имя*" required>
+                    <input class="card__form-input mob-input" type="text" name="phone" value="" placeholder="Ваш телефон*" required>
+                  </div>
+                  <a href="#" class="card__btn docs__btn btn mob-btn" data-type="diagonal_swipe_left">Получить консультацию</a>
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="mob-info">
+          <a href="tel:+79611119682" class="mob-info__call">+7(961) 111-96-82</a>
+          <p class="mob-info__time">с 9:00 до 19:00</p>
+          <p class="mob-info__locale"><img src="/img/mob/locale.svg" alt="">Москва</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article class="banner">
+      <div class="banner__content indent">
+        <h1 class="banner__label">Телемедицинские<br> консультации</h1>
+        <p class="banner__info">Воспользуйтесь онлайн-консультацией и оставайтесь на связи с врачом всегда, когда это необходимо</p>
+        <a href="#" class="btn" data-type="diagonal_swipe_left" uk-toggle="target: #modal-close-consultation">Получить консультацию</a>
+      </div>
+    </article>
+
+    <article class="edge indent">
+      <div class="edge__question">
+        <div class="edge__left">
+          <h3 class="edge__label">Во время самоизоляции особенно важно иметь доступ к врачам, не выходя из дома</h3>
+          <a href="#" class="btn edge__btn" data-type="diagonal_swipe_right">Задать вопрос в чате</a>
+        </div>
+        <div class="edge__right">
+          <p>
+            Для жителей отдаленных регионов мы стали еще ближе - теперь вам не нужно тратить время и деньги на дорогу, чтобы посетить врача нашего Центра.
+            <br><br>
+            Вы можете общаться с врачом в онлайн – режиме в удобное время и вне зависимости от местонахождения.
+          </p>
+        </div>
+      </div>
+      <div class="edge__list">
+        <div class="edge__item">
+          <img src="/img/main/1.svg" alt="">
+          <p>Опытные врачи по 6-ти специализациям </p>
+        </div>
+        <div class="edge__item">
+          <img src="/img/main/2.svg" alt="">
+          <p>Удобная форма<br> онлайн-заявки</p>
+        </div>
+        <div class="edge__item">
+          <img src="/img/main/3.svg" alt="">
+          <p>Консультация в удобное время, в комфортном месте</p>
+        </div>
+        <div class="edge__item">
+          <img src="/img/main/4.svg" alt="">
+          <p>Для всей семьи любого возраста</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="consultation indent">
+      <h2 class="consultation_label title">Быстрый и лёгкий способ получить профессиональную консультацию врача</h2>
+      <div class="consultation__list">
+        <div class="consultation__item">
+          <img src="/img/main/c1.jpg" alt="">
+          <div class="consultation__name">
+            по текущему состоянию
+          </div>
+        </div>
+        <div class="consultation__item">
+          <img src="/img/main/c2.jpg" alt="">
+          <div class="consultation__name">
+            по раннее сделанным анализам
+            и исследованиям
+          </div>
+        </div>
+        <div class="consultation__item">
+          <img src="/img/main/c3.jpg" alt="">
+          <div class="consultation__name">
+            по профилактике
+          </div>
+        </div>
+        <div class="consultation__item">
+          <img src="/img/main/c4.jpg" alt="">
+          <div class="consultation__name">
+            по подготовке к анализам и исследованиям
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="steps indent">
+      <div class="steps__double">
+        <div class="steps__left">
+          <h3 class="steps__label">Как воспользоваться услугой?</h3>
+          <div class="steps__col-list">
+            <div class="steps__item">
+              <img src="/img/main/l1.svg" alt="">
+              <p>записаться на онлайн- консультацию
+                по телефону: +7(961) 111-96-82 с помощью специалиста контакт-центра</p>
+            </div>
+            <div class="steps__item">
+              <img src="/img/main/l2.svg" alt="">
+              <p>самостоятельно на сайте clinicalcenter.ru на компьютере</p>
+            </div>
+            <div class="steps__item">
+              <img src="/img/main/l3.svg" alt="">
+              <p>с помощью смартфона, скачав приложение «Инфоклиника»</p>
+            </div>
+          </div>
+          <img class="steps__tap steps__desk" src="/img/main/tap.svg" alt="">
+          <img class="steps__tap steps__mob" src="/img/main/tap-mini.svg" alt="">
+        </div>
+        <div class="steps__right">
+        </div>
+      </div>
+    </article>
+    <div class="instruction">
+      <div class="instruction__step step1">
+        <p>
+          Зарегистрируйтесь в личном кабинете
+        </p>
+      </div>
+      <div class="instruction__step step2">
+        <p>
+          Выберите необходимого специалиста, удобную дату и время
+        </p>
+      </div>
+      <div class="instruction__step step3">
+        <p>
+          Запишитесь на онлайн-консультацию к нужному специалисту
+        </p>
+      </div>
+    </div>
+
+    <article class="advice indent">
+      <h2 class="title">К какому врачу можно записаться на консультацию?</h2>
+      <div>
+        <button class="uk-button uk-button-default btn-arr-down" id="btn-drop" type="button">Все</button>
+        <div uk-dropdown="pos: bottom-justify; mode: click" class="drop-menu">
+          <ul class="uk-nav uk-dropdown-nav" id="form-horizontal-select">
+            <li>Все</li>
+            <li>Терапевт</li>
+            <li>Эндокринолог</li>
+            <li>Ревматолог</li>
+            <li>Гастроэнтеролог</li>
+            <li>Педиатр</li>
+            <li>Детский кардиолог</li>
+          </ul>
+        </div>
+      </div>
+      <div class="advice__wrap">
+        <ul class="advice__list-wrap advice__horizontal" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+          <li><a href="#">Все</a></li>
+          <li><a href="#">Терапевт</a></li>
+          <li><a href="#">Эндокринолог</a></li>
+          <li><a href="#">Ревматолог </a></li>
+          <li><a href="#">Гастроэнтеролог</a></li>
+          <li><a href="#">Педиатр</a></li>
+          <li><a href="#">Детский кардиолог</a></li>
+        </ul>
+
+        <div class="card" id="anchor">
+          <div class="card__double">
+            <img src="/img/docs/1.jpg" alt="">
+            <div class="card__right">
+              <h4 class="card__name docs__name">Кузьмин Юрий Анатольевич</h4>
+              <p class="card__position">Врач терапевт</p>
+              <div class="card__scroll">
+                <p class="card__info">Стаж работы: 30 лет </p>
+                <p class="card__info">Закончил в 1986 году Рязанский медицинский институт.</p>
+                <p class="card__info">1986 – 1987 годы – обучение в интернатуре по специальности «Внутренние болезни».
+                </p>
+                <p class="card__info">Работал в должности врача-терапевта (участкового, цехового), стаж работы по специальности – 28 лет.
+                </p>
+                <p class="card__info">Награждён медалями за отличие в службе III и II степеней, грамотами Минюста, грамотой главы администрации г. Коврова.
+                </p>
+                <p class="card__info">Стаж работы: 30 лет </p>
+                <p class="card__info">Закончил в 1986 году Рязанский медицинский институт.</p>
+                <p class="card__info">1986 – 1987 годы – обучение в интернатуре по специальности «Внутренние болезни».
+                </p>
+                <p class="card__info">Работал в должности врача-терапевта (участкового, цехового), стаж работы по специальности – 28 лет.
+                </p>
+                <p class="card__info">Награждён медалями за отличие в службе III и II степеней, грамотами Минюста, грамотой главы администрации г. Коврова.
+                </p>
+                <p class="card__info">Стаж работы: 30 лет </p>
+                <p class="card__info">Закончил в 1986 году Рязанский медицинский институт.</p>
+                <p class="card__info">1986 – 1987 годы – обучение в интернатуре по специальности «Внутренние болезни».
+                </p>
+                <p class="card__info">Работал в должности врача-терапевта (участкового, цехового), стаж работы по специальности – 28 лет.
+                </p>
+                <p class="card__info">Награждён медалями за отличие в службе III и II степеней, грамотами Минюста, грамотой главы администрации г. Коврова.
+                </p>
+              </div>
+              <h5 class="card__form-title">Записаться на консультацию:</h5>
+              <form action="">
+                <div class="card__form-row">
+                  <input class="card__form-input" type="text" name="name" value="" placeholder="Ваше имя*" required>
+                  <input class="card__form-input" type="text" name="phone" value="" placeholder="Ваш телефон*" required>
+                </div>
+                <textarea class="card__form-textarea textarea" name="comment" placeholder="Комментарий"></textarea>
+                <a href="#" class="card__btn docs__btn btn" data-type="diagonal_swipe_left" uk-toggle="target: #modal-close-thanks">Записаться на прием</a>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <ul class="uk-switcher uk-margin" id="select-prof">
+          <li>
+            <div class="docs">
+              <div class="docs__item">
+                <img src="/img/docs/1.jpg" alt="">
+                <h4 class="docs__name">Кузьмин Юрий<br> Анатольевич</h4>
+                <p class="docs__dolj">Врач-терапевт</p>
+                <a href="#" class="docs__btn btn" data-type="diagonal_swipe_left">Записаться на прием</a>
+              </div>
+              <div class="docs__item">
+                <img src="/img/docs/2.jpg" alt="">
+                <h4 class="docs__name">Очирова Вероника<br> Владимировна</h4>
+                <p class="docs__dolj">Врач-терапевт</p>
+                <a href="#" class="docs__btn btn" data-type="diagonal_swipe_left">Записаться на прием</a>
+              </div>
+              <div class="docs__item">
+                <img src="/img/docs/3.jpg" alt="">
+                <h4 class="docs__name">Зайцев Алексей<br> Иванович</h4>
+                <p class="docs__dolj">Врач-терапевт</p>
+                <a href="#" class="docs__btn btn" data-type="diagonal_swipe_left">Записаться на прием</a>
+              </div>
+              <div class="docs__item">
+                <img src="/img/docs/1.jpg" alt="">
+                <h4 class="docs__name">Кузьмин Юрий<br> Анатольевич</h4>
+                <p class="docs__dolj">Врач-терапевт</p>
+                <a href="#" class="docs__btn btn" data-type="diagonal_swipe_left">Записаться на прием</a>
+              </div>
+              <div class="docs__item">
+                <img src="/img/docs/1.jpg" alt="">
+                <h4 class="docs__name">Кузьмин Юрий<br> Анатольевич</h4>
+                <p class="docs__dolj">Врач-терапевт</p>
+                <a href="#" class="docs__btn btn" data-type="diagonal_swipe_left">Записаться на прием</a>
+              </div>
+            </div>
+          </li>
+          <li>Терапевт</li>
+          <li>Эндокринолог</li>
+          <li>Ревматолог</li>
+          <li>Гастроэнтеролог</li>
+          <li>Педиатр</li>
+          <li>Детский кардиолог</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="allinfo indent">
+      <div class="allinfo__left">
+        <p>
+          Вся информация, полученная в ходе телемедицинской консультации, фиксируется в виде письменного заключения и хранится в вашем личном кабинете
+        </p>
+        <img src="/img/main/file.svg" alt="">
+      </div>
+      <div class="allinfo__right">
+        <p>Мы гарантируем более высокий уровень конфиденциальности и защиты персональных данных по сравнению с различными публичным сервисами (Skype, WhatsApp и т.п.).
+        </p>
+        <img src="/img/main/lukas.svg" alt="">
+      </div>
+    </article>
+
+    <article class="quests-form">
+      <div class="quests-form__bg indent">
+        <div class="quests-forn__wrap">
+          <h3 class="quests-form__label">Остались вопросы?</h3>
+          <form action="" class="quests-form__form">
+            <div class="quests-form__col quests-form__margin">
+              <input class="input" type="text" name="name" placeholder="Ваше имя" required>
+              <a href="#" class="btn quests-form__btn quest__desc" data-type="diagonal_swipe_left" uk-toggle="target: #modal-close-consultation">Получить консультацию</a>
+            </div>
+            <div class="quests-form__col">
+              <input class="input" type="text" name="phone" placeholder="Ваш телефон" required>
+              <p class="quests-form__remark">
+                Вы можете задать любые вопросы нашим сотрудникам.
+              </p>
+            </div>
+            <a href="#" class="btn quests-form__btn quest__mob" data-type="diagonal_swipe_left" uk-toggle="target: #modal-close-consultation">Получить консультацию</a>
+          </form>
+        </div>
+      </div>
+    </article>
+
+    <!-- Заказать обратный звонок модальное окно --->
+    <div class="modal" id="modal-close-default" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body madal__content">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="modal__title modal__title-call">Заказать обратный звонок</h2>
+        <form class="modal__form" action="">
+          <div class="card__form-row">
+            <input class="card__form-input" type="text" name="name" value="" placeholder="Ваше имя*" required>
+            <input class="card__form-input" type="text" name="phone" value="" placeholder="Ваш телефон*" required>
+          </div>
+          <textarea class="card__form-textarea textarea" name="comment" placeholder="Комментарий"></textarea>
+          <a href="#" class="card__btn docs__btn btn" data-type="diagonal_swipe_left">Перезвоните мне</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Получить консультацию модальное окно --->
+    <div class="modal" id="modal-close-consultation" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body madal__content">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="modal__title modal__title-call">Получить консультацию</h2>
+        <form class="modal__form" action="">
+          <div class="card__form-row">
+            <input class="card__form-input" type="text" name="name" value="" placeholder="Ваше имя*" required>
+            <input class="card__form-input" type="text" name="phone" value="" placeholder="Ваш телефон*" required>
+          </div>
+          <textarea class="card__form-textarea textarea" name="comment" placeholder="Комментарий"></textarea>
+          <a href="#" class="card__btn docs__btn btn" data-type="diagonal_swipe_left">Получить консультацию</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Спасибо за доверие модальное окно --->
+    <div class="modal" id="modal-close-thanks" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body madal__content">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="modal__title modal__title-call">Спасибо за доверие к нам!</h2>
+        <p class="modal__info">Ваша заявка отправлена. Скоро мы с вами свяжемся.</p>
+      </div>
+    </div>
+
+
+
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>
